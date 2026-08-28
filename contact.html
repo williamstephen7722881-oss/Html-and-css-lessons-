@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — HTML &amp; CSS Learning Hub</title>
+<meta name="description" content="Get in touch with the HTML and CSS Learning Hub — phone, email, and location." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="bracket">&lt;</span>HCLH<span class="bracket">/&gt;</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="services.html">services</a></li>
+      <li><a href="contact.html" class="nav-cta" aria-current="page">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom:40px;">
+    <div class="container">
+      <span class="eyebrow-tag">&lt;contact/&gt;</span>
+      <h1 style="max-width:22ch;">Questions? We're glad to help.</h1>
+      <p class="lede">Whether it's about a lesson, the certificate, or something else entirely — reach out below.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-grid">
+
+      <div>
+        <span class="tag-label">&lt;get-in-touch<span class="close">&gt;</span></span>
+        <h2>Contact details</h2>
+
+        <div class="info-row">
+          <div class="ico">☎</div>
+          <div>
+            <strong>Phone</strong>
+            <a href="tel:08063427690">0806 342 7690</a>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="ico">@</div>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:hello@htmlcsslearninghub.example">hello@htmlcsslearninghub.example</a>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="ico">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>Lagos, Nigeria</span>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            title="Map showing Lagos, Nigeria"
+            src="https://www.google.com/maps?q=Lagos,Nigeria&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div>
+        <span class="tag-label">&lt;message-form<span class="close">&gt;</span></span>
+        <h2>Send a message</h2>
+        <form class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send message</button>
+          <p class="form-note" style="margin-top:14px; font-size:0.9rem; color:var(--ink-soft);"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="color:var(--white);"><span class="bracket">&lt;</span>HCLH<span class="bracket">/&gt;</span></a>
+        <p>A beginner-friendly home for learning HTML and CSS, one small lesson at a time.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:08063427690">0806 342 7690</a></li>
+          <li><a href="mailto:hello@htmlcsslearninghub.example">hello@htmlcsslearninghub.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HTML &amp; CSS Learning Hub</span>
+      <span>Made for people just getting started.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
