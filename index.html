@@ -1,147 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>HTML &amp; CSS Learning Hub — Learn to Build the Web</title>
-<meta name="description" content="A friendly, beginner-first hub for learning HTML and CSS through lessons, tutorials, and quizzes." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Learning Hub | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="brand"><span class="bracket">&lt;</span>HCLH<span class="bracket">/&gt;</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html" aria-current="page">home</a></li>
-      <li><a href="about.html">about</a></li>
-      <li><a href="services.html">services</a></li>
-      <li><a href="contact.html" class="nav-cta">contact</a></li>
-    </ul>
-  </nav>
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">HTML & CSS Learning Hub</a>
+    <nav><ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+  </div>
 </header>
 
-<main id="main">
-
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow-tag">&lt;beginner-friendly/&gt;</span>
-        <h1>Learn to build the web, <span class="accent">one tag at a time.</span></h1>
-        <p class="lede">Welcome to the HTML &amp; CSS Learning Hub — a calm, structured place to go from "what's a tag?" to shipping your first styled page. No jargon, no rush, just clear lessons and things to build.</p>
-        <div class="hero-actions">
-          <a href="services.html#lessons" class="btn btn-primary">Start learning →</a>
-          <a href="about.html" class="btn btn-ghost">See how it works</a>
-        </div>
-      </div>
-      <div class="code-window" aria-hidden="true">
-        <div class="bar"><span></span><span></span><span></span></div>
-        <pre><span class="cmt">&lt;!-- your first page --&gt;</span>
-<span class="tag">&lt;!DOCTYPE</span> <span class="attr">html</span><span class="tag">&gt;</span>
-<span class="tag">&lt;html&gt;</span>
-  <span class="tag">&lt;body&gt;</span>
-    <span class="tag">&lt;h1</span> <span class="attr">class</span>=<span class="str">"hello"</span><span class="tag">&gt;</span>
-      Hello, web!
-    <span class="tag">&lt;/h1&gt;</span>
-  <span class="tag">&lt;/body&gt;</span>
-<span class="tag">&lt;/html&gt;</span></pre>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Start Your HTML & CSS Journey</h1>
+      <p>Learn how websites are structured with HTML and styled with CSS. This learning hub is designed to make your first steps into web development simple and enjoyable.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="lessons.html">Start Learning</a>
+        <a class="btn btn-secondary" href="about.html">Learn More</a>
       </div>
     </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head center">
-        <span class="tag-label">&lt;why-us<span class="close">&gt;</span></span>
-        <h2>A hub built the way beginners actually learn</h2>
-        <p>Short lessons, real code you can edit, and quizzes that check understanding instead of memory.</p>
-      </div>
-      <div class="grid-3">
-        <div class="card">
-          <div class="icon">&lt;/&gt;</div>
-          <h3>Write real code</h3>
-          <p>Every lesson pairs an explanation with an editable code example, so you see the result of every change instantly.</p>
-        </div>
-        <div class="card">
-          <div class="icon">✓</div>
-          <h3>Check your understanding</h3>
-          <p>Short quizzes after each topic catch gaps early, before they turn into confusing bugs later on.</p>
-        </div>
-        <div class="card orange">
-          <div class="icon">★</div>
-          <h3>Earn a certificate</h3>
-          <p>Finish the HTML &amp; CSS path and claim an optional certificate to show what you've learned.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-alt">
-    <div class="container">
-      <div class="section-head center">
-        <span class="tag-label">&lt;learning-path<span class="close">&gt;</span></span>
-        <h2>Your path from zero to first project</h2>
-      </div>
-      <ol class="path">
-        <li><h3>Structure</h3><p>Learn HTML elements, tags, and how a page is built.</p></li>
-        <li><h3>Style</h3><p>Learn CSS selectors, colors, and layout basics.</p></li>
-        <li><h3>Practice</h3><p>Work through guided tutorials and small projects.</p></li>
-        <li><h3>Prove it</h3><p>Pass the quizzes and unlock your certificate.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="card orange" style="display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;">
-        <div>
-          <h2 style="margin-bottom:6px;">Ready to write your first tag?</h2>
-          <p style="margin:0;">Jump into the lessons — it takes less time than reading this page.</p>
-        </div>
-        <a href="services.html#lessons" class="btn btn-primary">Start learning →</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand" style="color:var(--white);"><span class="bracket">&lt;</span>HCLH<span class="bracket">/&gt;</span></a>
-        <p>A beginner-friendly home for learning HTML and CSS, one small lesson at a time.</p>
-      </div>
-      <div>
-        <h4>Site</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:08063427690">0806 342 7690</a></li>
-          <li><a href="mailto:hello@htmlcsslearninghub.example">hello@htmlcsslearninghub.example</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 HTML &amp; CSS Learning Hub</span>
-      <span>Made for people just getting started.</span>
+    <div class="code-window">
+      <p><span class="tag">&lt;h1&gt;</span><span class="text">Hello, Developer!</span><span class="tag">&lt;/h1&gt;</span></p>
+      <br>
+      <p><span class="tag">body</span> {</p>
+      <p>&nbsp;&nbsp;color: blue;</p>
+      <p>&nbsp;&nbsp;font-size: 18px;</p>
+      <p>}</p>
     </div>
   </div>
-</footer>
+</section>
 
-<script src="script.js"></script>
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>What Will You Learn?</h2>
+      <p>Understand the building blocks behind modern websites.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card"><span class="icon">🏗️</span><h3>HTML Structure</h3><p>Learn how headings, paragraphs, links, images and other elements create the structure of a webpage.</p></article>
+      <article class="card"><span class="icon">🎨</span><h3>CSS Styling</h3><p>Discover how colors, spacing, fonts and layouts can transform a plain webpage into a beautiful design.</p></article>
+      <article class="card"><span class="icon">💻</span><h3>Build Websites</h3><p>Combine HTML and CSS to create your own simple, responsive webpages.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="highlight">
+  <div class="container grid-2">
+    <div class="content"><h2>HTML = Structure</h2><p>HTML gives a webpage its content and organization. Think of it as the skeleton of a website.</p></div>
+    <div class="content"><h2>CSS = Style</h2><p>CSS controls how HTML looks. It handles colors, fonts, spacing, layouts and responsiveness.</p></div>
+  </div>
+</section>
+</main>
+<footer><p>&copy; 2026 HTML & CSS Learning Hub. Built for beginners.</p></footer>
 </body>
 </html>

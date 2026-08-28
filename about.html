@@ -1,174 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About — HTML &amp; CSS Learning Hub</title>
-<meta name="description" content="HTML basics, CSS basics, code examples, and core web design concepts explained simply." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Learning Hub | About</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="brand"><span class="bracket">&lt;</span>HCLH<span class="bracket">/&gt;</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="index.html">home</a></li>
-      <li><a href="about.html" aria-current="page">about</a></li>
-      <li><a href="services.html">services</a></li>
-      <li><a href="contact.html" class="nav-cta">contact</a></li>
+<header><div class="container nav"><a class="logo" href="index.html">HTML & CSS Learning Hub</a>
+<nav><ul><li><a href="index.html">Home</a></li><li><a class="active" href="about.html">About</a></li><li><a href="lessons.html">Lessons</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+<main>
+<section class="page-hero"><div class="container"><h1>About This Website</h1><p>A simple starting point for future web developers.</p></div></section>
+<section><div class="container grid-2">
+  <div class="content">
+    <h2>Our Purpose</h2>
+    <p>HTML & CSS Learning Hub was created to help complete beginners understand the foundations of web development without complicated explanations.</p>
+    <h3>Here You Will Understand:</h3>
+    <ul>
+      <li>What HTML is and why it is important.</li>
+      <li>What CSS is and how it changes appearance.</li>
+      <li>How HTML structures a webpage.</li>
+      <li>How CSS styles a webpage.</li>
+      <li>How HTML and CSS work together.</li>
     </ul>
-  </nav>
-</header>
-
-<main id="main">
-
-  <section class="hero" style="padding-bottom:40px;">
-    <div class="container">
-      <span class="eyebrow-tag">&lt;about-this-hub/&gt;</span>
-      <h1 style="max-width:22ch;">The two languages every website is built from</h1>
-      <p class="lede">HTML gives a page its structure. CSS gives it its look. Understand those two ideas well, and the rest of web design starts making sense fast.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="container grid-2">
-      <div class="card">
-        <span class="tag-label">&lt;html-basics<span class="close">&gt;</span></span>
-        <h2>HTML: the structure</h2>
-        <p>HTML (HyperText Markup Language) organizes content into elements — headings, paragraphs, images, links, lists — using tags. Tags usually come in pairs, wrapping the content they describe.</p>
-        <p>Browsers read this structure top to bottom and turn it into the page you see.</p>
-      </div>
-      <div class="code-window">
-        <div class="bar"><span></span><span></span><span></span></div>
-        <pre><span class="tag">&lt;article&gt;</span>
-  <span class="tag">&lt;h2&gt;</span>My first post<span class="tag">&lt;/h2&gt;</span>
-  <span class="tag">&lt;p&gt;</span>Learning HTML step by step.<span class="tag">&lt;/p&gt;</span>
-  <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"#"</span><span class="tag">&gt;</span>Read more<span class="tag">&lt;/a&gt;</span>
-<span class="tag">&lt;/article&gt;</span></pre>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-alt">
-    <div class="container grid-2">
-      <div class="code-window" style="order:1;">
-        <div class="bar"><span></span><span></span><span></span></div>
-        <pre><span class="tag">.card</span> {
-  <span class="attr">background</span>: <span class="str">#ffffff</span>;
-  <span class="attr">border-radius</span>: <span class="str">14px</span>;
-  <span class="attr">padding</span>: <span class="str">24px</span>;
-  <span class="attr">box-shadow</span>: <span class="str">0 8px 20px</span>
-    <span class="str">rgba(0,0,0,.08)</span>;
-}</pre>
-      </div>
-      <div class="card" style="order:2;">
-        <span class="tag-label">&lt;css-basics<span class="close">&gt;</span></span>
-        <h2>CSS: the style</h2>
-        <p>CSS (Cascading Style Sheets) controls color, spacing, fonts, and layout. You select an HTML element, then declare the properties you want it to have.</p>
-        <p>The "cascade" in the name means styles can come from multiple places, and clear rules decide which one wins.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head center">
-        <span class="tag-label">&lt;code-examples<span class="close">&gt;</span></span>
-        <h2>HTML tags vs. CSS properties, side by side</h2>
-      </div>
-      <table class="compare">
-        <thead>
-          <tr><th>Goal</th><th>HTML tag</th><th>CSS property</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Make a heading</td><td><code>&lt;h1&gt;</code></td><td><code>font-size</code></td></tr>
-          <tr><td>Add a link</td><td><code>&lt;a href=""&gt;</code></td><td><code>text-decoration</code></td></tr>
-          <tr><td>Show an image</td><td><code>&lt;img src=""&gt;</code></td><td><code>object-fit</code></td></tr>
-          <tr><td>Group content</td><td><code>&lt;div&gt;</code></td><td><code>display: flex</code></td></tr>
-          <tr><td>Set spacing</td><td>—</td><td><code>margin</code> / <code>padding</code></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="section-alt">
-    <div class="container">
-      <div class="section-head center">
-        <span class="tag-label">&lt;design-concepts<span class="close">&gt;</span></span>
-        <h2>Core web design concepts worth knowing early</h2>
-      </div>
-      <div class="grid-3">
-        <div class="card">
-          <div class="icon">□</div>
-          <h3>Layout</h3>
-          <p>How elements are arranged on the page — using tools like Flexbox and Grid to place things in rows, columns, or grids.</p>
-        </div>
-        <div class="card">
-          <div class="icon">↔</div>
-          <h3>Responsiveness</h3>
-          <p>Designing so a page adapts smoothly from a phone screen to a wide desktop monitor.</p>
-        </div>
-        <div class="card orange">
-          <div class="icon">Aa</div>
-          <h3>Typography &amp; color</h3>
-          <p>Choosing readable fonts and a consistent color palette to give a page personality and clarity.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="card orange" style="display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;">
-        <div>
-          <h2 style="margin-bottom:6px;">Ready to put this into practice?</h2>
-          <p style="margin:0;">The services page has lessons, tutorials, and quizzes waiting.</p>
-        </div>
-        <a href="services.html" class="btn btn-primary">View lessons →</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand" style="color:var(--white);"><span class="bracket">&lt;</span>HCLH<span class="bracket">/&gt;</span></a>
-        <p>A beginner-friendly home for learning HTML and CSS, one small lesson at a time.</p>
-      </div>
-      <div>
-        <h4>Site</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:08063427690">0806 342 7690</a></li>
-          <li><a href="mailto:hello@htmlcsslearninghub.example">hello@htmlcsslearninghub.example</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 HTML &amp; CSS Learning Hub</span>
-      <span>Made for people just getting started.</span>
-    </div>
   </div>
-</footer>
-
-<script src="script.js"></script>
+  <div class="content">
+    <h2>Why Learn HTML & CSS?</h2>
+    <ul>
+      <li>They are the foundation of web development.</li>
+      <li>HTML helps create the structure and content of websites.</li>
+      <li>CSS makes websites attractive and responsive.</li>
+      <li>They are a great first step before learning JavaScript and other web technologies.</li>
+      <li>You can quickly begin building your own webpages.</li>
+    </ul>
+    <div class="tip"><strong>Beginner Tip:</strong> Practice regularly. Small projects are one of the best ways to understand HTML and CSS.</div>
+  </div>
+</div></section>
+</main>
+<footer><p>&copy; 2026 HTML & CSS Learning Hub. Built for beginners.</p></footer>
 </body>
 </html>
